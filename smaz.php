@@ -50,8 +50,8 @@ class Smaz
             {// 如果没有从 encode book中找到，就放到字面值暂存区里
                 $verbatim .= $str[$inIdx];
                 $inIdx++;
-                if(strlen($verbatim) == 256)
-                {// 如果字面值暂存区达到256个字符，写到输出并清空
+                if(strlen($verbatim) == 255)
+                {// 如果字面值暂存区达到255个字符，写到输出并清空
                     $output .= self::flush_verbatim($verbatim);
                     $verbatim = '';
                 }
