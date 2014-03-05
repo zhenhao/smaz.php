@@ -1,0 +1,8 @@
+{
+    "name": "zhenhao/smaz",
+    "description": "A short description of what your package does",
+    "require": {
+        "php": ">=5.2.0",
+        "another-vendor/package": "1.*"
+    }
+}
