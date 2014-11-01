@@ -24,7 +24,7 @@ class Smaz
         $inLen = strlen($str);
         $inIdx = 0;
         $encodeBook = SmazConf::getEncodeBook();
-        
+
         $output = '';
         $verbatim = '';
         while($inIdx < $inLen)
@@ -32,7 +32,8 @@ class Smaz
             $encode = false;
             for($j = min(7, $inLen - $inIdx); $j > 0; $j--)
             {// 从7个字符开始查找encode book, book里最长串长度是7
-                $code = $encodeBook[substr($str, $inIdx, $j)];
+                $code = isset($encodeBook[substr($str, $inIdx, $j)]) ? 
+                    $encodeBook[substr($str, $inIdx, $j)] : null;
                 if($code != null)
                 {
                     if(strlen($verbatim))
