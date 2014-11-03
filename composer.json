@@ -13,5 +13,10 @@
         "preferred-install": "dist"
     },  
     "minimum-stability": "stable",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "classmap" : {
+            "smaz.php"
+        }
+    }
 }
