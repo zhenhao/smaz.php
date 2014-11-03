@@ -1,8 +1,13 @@
 {
     "name": "zhenhao/smaz",
-    "description": "A short description of what your package does",
-    "require": {
-        "php": ">=5.2.0",
-        "another-vendor/package": "1.*"
-    }
+    "description": "PHP port of Smaz - a short string compression library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhenhao",
+            "email": "hit.zhenhao@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
 }
