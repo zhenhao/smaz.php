@@ -15,8 +15,8 @@
     "minimum-stability": "stable",
     "require": {},
     "autoload": {
-        "classmap" : {
+        "classmap" : [
             "smaz.php"
-        }
+        ]
     }
 }
