@@ -1,10 +1,6 @@
-smaz.php
-========
-
+## smaz.php
 PHP port of Smaz - a short string compression library
-
-php test.php
-
+### php test.php
     -50%	http://www.baidu.com
     -50%	This is a small string
     +9.09%	THIS IS A SMALL STRING
@@ -15,3 +11,17 @@ php test.php
     +25%	luck
     +7.41%	好好学习，天天向上
     +2.9%	白日依山尽，黄河入海流，欲穷千里目，更上一层楼
+    
+### require from composer
+    1. composer require zhenhao/smaz
+    2. try...
+    <?php
+    include "vendor/autoload.php";
+    
+    $str = 'http://www.baidu.com';
+    $x = Smaz::encode($str);
+    var_dump($x, strlen($x));
+    $t = Smaz::decode($x);
+    var_dump($t, strlen($t));
+    
+    
