@@ -10,7 +10,7 @@
  */
 
 /**
- * Class Smaz
+ * Class Smaz.
  */
 class Smaz
 {
@@ -121,7 +121,7 @@ class Smaz
 }
 
 /**
- * Class SmazConf
+ * Class SmazConf.
  *
  * define smaz encode book and decode book.
  */
