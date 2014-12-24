@@ -1,7 +1,7 @@
 {
     "name": "zhenhao/smaz",
     "description": "PHP port of Smaz - a short string compression library",
-    "keyworks": ["smaz", "php"],
+    "keywords": ["smaz", "php"],
     "license": "MIT",
     "authors": [
         {
